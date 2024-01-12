@@ -33,8 +33,10 @@ export const Contact = () => {
       },
       body: JSON.stringify(formDetails),
     });
+    console.log(response);
     setButtonText("Send");
     let result = await response.json();
+    console.log(result)
     setFormDetails(formInitialDetails);
     console.log(result.code);
     if (result.code === 200) {
@@ -66,7 +68,7 @@ export const Contact = () => {
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
