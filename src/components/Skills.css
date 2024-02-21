@@ -17,21 +17,41 @@
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   margin: 10px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  transition: all 0.3s ease;
-  animation: updown 3s linear infinite; /* Change animation to 'move' with duration of 4s */
+  transition: all 0.1s ease;
+  animation-name: zoomInOut;
+  animation-duration: 1s !important;
+  animation-iteration-count: infinite; /* Change animation to 'move' with duration of 4s */
 }
 
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
+#one {
+  animation-timing-function: ease;
+}
+
+#two {
+  animation-timing-function: linear;
+}
+
+#three {
+  animation-timing-function: ease-in;
+}
+
+#four {
+  animation-timing-function: ease-out;
+}
+
+#five {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1); /* Initial and final state: normal size */
   }
   50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
+    transform: scale(1.05); /* Middle state: zoomed in */
   }
 }
 
@@ -51,6 +71,40 @@
 
 .javascript {
   background-image: url("../assets/img/javascript-39404.png");
+}
+
+.cpp {
+  background-image: url("../assets/img/cpp.png");
+}
+.react {
+  background-image: url("../assets/img/react.png");
+}
+.redux {
+  background-image: url("../assets/img/redux.png");
+}
+.bootstrap {
+  background-image: url("../assets/img/bootstrap.png");
+}
+.nodejs {
+  background-image: url("../assets/img/nodejs.png");
+}
+.mongo {
+  background-image: url("../assets/img/mongo.png");
+}
+.git {
+  background-image: url("../assets/img/git.png");
+}
+.premiere {
+  background-image: url("../assets/img/premiere.png");
+}
+.ae {
+  background-image: url("../assets/img/ae.png");
+}
+.canva {
+  background-image: url("../assets/img/canva.png");
+}
+.fl {
+  background-image: url("../assets/img/fl.png");
 }
 
 /* Add more styles for other logos */

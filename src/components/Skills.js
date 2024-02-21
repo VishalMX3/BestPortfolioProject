@@ -19,9 +19,20 @@ export const Skills = () => {
         <h2>Skills</h2>
         <div className="skills-container">
           {/* Your technology logos here */}
-          <div className="skill-logo html"></div>
-          <div className="skill-logo css"></div>
-          <div className="skill-logo javascript"></div>
+          <div className="skill-logo html" id="one"></div>
+          <div className="skill-logo css" id="two"></div>
+          <div className="skill-logo javascript" id="three"></div>
+          <div className="skill-logo cpp" id="four"></div>
+          <div className="skill-logo react" id="five"></div>
+          <div className="skill-logo redux" id="four"></div>
+          <div className="skill-logo bootstrap" id="three"></div>
+          <div className="skill-logo nodejs" id="two"></div>
+          <div className="skill-logo mongo" id="one"></div>
+          <div className="skill-logo git" id="two"></div>
+          <div className="skill-logo premiere" id="three"></div>
+          <div className="skill-logo ae" id="four"></div>
+          <div className="skill-logo canva" id="five"></div>
+          <div className="skill-logo fl" id="four"></div>
           {/* Add more logos as needed */}
         </div>
       </div>
