@@ -1,0 +1,71 @@
+/* Skills.css */
+
+.skills {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow logos to wrap to the next line on smaller screens */
+  margin-top: 30px;
+}
+
+.skill-logo {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  animation: updown 3s linear infinite; /* Change animation to 'move' with duration of 4s */
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.skill-logo:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Shiny effect on hover */
+}
+
+/* Define background images for each technology logo */
+.html {
+  background-image: url("../assets/img/html5-logo-31813.png");
+}
+
+.css {
+  background-image: url("../assets/img/html5-logo-31821.png");
+}
+
+.javascript {
+  background-image: url("../assets/img/javascript-39404.png");
+}
+
+/* Add more styles for other logos */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .skill-logo {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px; /* Adjust size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skill-logo {
+    width: 60px; /* Adjust size for even smaller screens */
+    height: 60px; /* Adjust size for even smaller screens */
+  }
+}

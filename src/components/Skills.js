@@ -1,69 +1,30 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// Skills.js
 
-import colorSharp from "../assets/img/color-sharp.png";
+import React, { useEffect } from "react";
+import "./Skills.css"; // Import the CSS file for styling
+import "animate.css";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  useEffect(() => {
+    const logos = document.querySelectorAll(".skill-logo");
+    logos.forEach((logo) => {
+      const animationDuration = Math.random() * (30 - 15) + 15; // Random duration between 15s and 30s
+      logo.style.animationDuration = `${animationDuration}s`;
+    });
+  }, []);
 
   return (
-    <section className="skill" id="skills">
+    <section className="skills" id="skills">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                As the architect of digital experiences, I thrive on turning
-                ideas into captivating realities.
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Graphics Designing</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Video Editing</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Music Production</h5>
-                </div>
-              </Carousel>
-            </div>
-          </div>
+        <h2>Skills</h2>
+        <div className="skills-container">
+          {/* Your technology logos here */}
+          <div className="skill-logo html"></div>
+          <div className="skill-logo css"></div>
+          <div className="skill-logo javascript"></div>
+          {/* Add more logos as needed */}
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };
