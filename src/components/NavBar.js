@@ -73,7 +73,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/vishal-pundhir-31059b197/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={navIcon1} alt="" />
                 </a>
                 <a href="#">

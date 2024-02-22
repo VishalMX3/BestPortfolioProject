@@ -243,9 +243,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.mail {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 220px 0 100px 0;
   background-image: url("./assets/img/space.png");
   background-position: top center;
   background-size: cover;

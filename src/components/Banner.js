@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/vishal4.png";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { Envelope, ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -81,6 +81,14 @@ export const Banner = () => {
                     can do. I am dedicated to perfecting my craft by learning
                     continuously and improving atleast 1% everyday.
                   </p>
+                  <a
+                    href="mailto:f20191055@pilani.bits-pilani.ac.in?subject=Subject%20Here"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Envelope size={25} />
+                    f20191055@pilani.bits-pilani.ac.in
+                  </a>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
