@@ -12,16 +12,19 @@ export const Projects = () => {
       title: "E-Commerce Application",
       description: "FullStack Web Development (MERN)",
       imgUrl: projImg1,
+      link: "https://e-com-client-mx7f.onrender.com/",
     },
     {
       title: "Movie-DB",
       description: "ReactJS | REST API",
       imgUrl: projImg2,
+      link: "https://curious-clafoutis-716847.netlify.app/",
     },
     {
       title: "Personal Portfolio",
       description: "ReactJS | CSS Animations",
       imgUrl: projImg3,
+      link: "https://vishal-portfolio-hsbr.onrender.com/",
     },
   ];
 
