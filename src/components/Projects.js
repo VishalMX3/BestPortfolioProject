@@ -10,33 +10,18 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Personal Blog Website",
-      description: "Full Stack Web Development",
+      title: "E-Commerce Application",
+      description: "FullStack Web Development (MERN)",
       imgUrl: projImg1,
     },
     {
       title: "Movie-DB",
-      description: "ReactJs | REST API",
+      description: "ReactJS | REST API",
       imgUrl: projImg2,
     },
     {
-      title: "Interactive Dashboard",
-      description: "React Bootstrap",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Personal Portfolio",
+      description: "ReactJS | CSS Animations",
       imgUrl: projImg3,
     },
   ];
