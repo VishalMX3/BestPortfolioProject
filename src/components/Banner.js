@@ -75,11 +75,11 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I'm a blend of tech and creativity, casting a spell where my
-                    technical skills seamlessly merge with creative flair to
-                    elevate user experiences. Every piece of code transforms
-                    into a creative touch, maximizing the magic in the digital
-                    world.
+                    I'm a final year student from BITS Pilani. My aim is simply
+                    to be the best software developer that I can be and to
+                    contribute to the technology industry all that I know and
+                    can do. I am dedicated to perfecting my craft by learning
+                    continuously and improving atleast 1% everyday.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

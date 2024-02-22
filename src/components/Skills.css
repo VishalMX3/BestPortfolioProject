@@ -7,6 +7,7 @@
 
 .skills-container {
   display: flex;
+
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Allow logos to wrap to the next line on smaller screens */
