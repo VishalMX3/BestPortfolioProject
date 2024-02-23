@@ -44,8 +44,8 @@ export const Newsletter = ({ status, message, onValidated }) => {
           <Col>
             <form onSubmit={handleSubmit}>
               <div className="form-items">
-                <Row>
-                  <Col md={6} xl={7}>
+                <Row className="d-flex justify-content-center">
+                  <Col md={11} xl={11}>
                     <div className="new-email-bx">
                       <input
                         value={email}
@@ -57,8 +57,8 @@ export const Newsletter = ({ status, message, onValidated }) => {
                   </Col>
                 </Row>
 
-                <Row>
-                  <Col md={6} xl={7}>
+                <Row className="d-flex justify-content-center">
+                  <Col md={11} xl={11}>
                     <div className="new-email-bx">
                       <input
                         value={firstName}
@@ -70,8 +70,8 @@ export const Newsletter = ({ status, message, onValidated }) => {
                   </Col>
                 </Row>
 
-                <Row>
-                  <Col md={6} xl={7}>
+                <Row className="d-flex justify-content-center">
+                  <Col md={11} xl={11}>
                     <div className="new-email-bx">
                       <input
                         value={lastName}
