@@ -74,7 +74,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <h2 className="text-center mb-4">Get In Touch</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -126,7 +126,7 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit">
+                        <button type="submit" className="mx-auto d-block">
                           <span>{buttonText}</span>
                         </button>
                       </Col>
