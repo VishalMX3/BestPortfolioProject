@@ -278,6 +278,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+
+@media (max-width: 767px) {
+  .banner h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+}
 .banner p {
   color: #b8b8b8;
   font-size: 18px;
@@ -509,6 +515,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 30px;
   /* text-align: center; */
 }
+
+@media (max-width: 767px) {
+  .contact h2 {
+    text-align: center;
+  }
+}
 .contact form input,
 .contact form textarea {
   width: 100%;
@@ -549,9 +561,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
-  /* display: block;
-  margin: 0 auto; */
 }
+
+@media (max-width: 767px) {
+  .contact form button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .contact form button span {
   z-index: 1;
   position: relative;
