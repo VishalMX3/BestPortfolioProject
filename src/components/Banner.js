@@ -85,12 +85,19 @@ export const Banner = () => {
                     href="mailto:f20191055@pilani.bits-pilani.ac.in?subject=Subject%20Here"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ marginRight: "10px" }}
                   >
                     <Envelope size={25} />
-                    f20191055@pilani.bits-pilani.ac.in
                   </a>
+                  <span>f20191055@pilani.bits-pilani.ac.in</span>
+
                   <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    <a
+                      href="#connect"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </a>
                   </button>
                 </div>
               )}
