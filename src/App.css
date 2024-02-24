@@ -114,6 +114,29 @@ nav.navbar a.navbar-brand {
     min-width: 30%;
   }
 }
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    padding-top: 20px;
+  }
+}
+
+.navbar-nav .nav-link {
+  padding: 0 15px; /* Adjust spacing between links */
+}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -133,6 +156,13 @@ span.navbar-text {
 .social-icon {
   display: inline-block;
   margin-left: 14px;
+}
+
+@media (max-width: 767px) {
+  .social-icon,
+  .navbar-text button {
+    display: none;
+  }
 }
 .social-icon a {
   width: 42px;
@@ -261,6 +291,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 160px 0 100px 0;
+  }
 }
 .banner .tagline {
   font-weight: 700;
