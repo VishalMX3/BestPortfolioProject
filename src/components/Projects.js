@@ -15,16 +15,16 @@ export const Projects = () => {
       link: "https://e-com-client-mx7f.onrender.com/",
     },
     {
+      title: "Admin Dashboard",
+      description: "Refine | DaisyUI | CRUD operations",
+      imgUrl: projImg3,
+      link: "https://refine-dashboard-5vvw.onrender.com/",
+    },
+    {
       title: "Movie-DB",
       description: "ReactJS | REST API",
       imgUrl: projImg2,
       link: "https://curious-clafoutis-716847.netlify.app/",
-    },
-    {
-      title: "Personal Portfolio",
-      description: "ReactJS | CSS Animations",
-      imgUrl: projImg3,
-      link: "https://vishal-portfolio-hsbr.onrender.com/",
     },
   ];
 
