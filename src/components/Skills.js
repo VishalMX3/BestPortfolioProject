@@ -22,9 +22,11 @@ export const Skills = () => {
           <div className="skill-logo html" id="one"></div>
           <div className="skill-logo css" id="two"></div>
           <div className="skill-logo javascript" id="three"></div>
+          <div className="skill-logo typescript" id="four"></div>
           <div className="skill-logo cpp" id="four"></div>
           <div className="skill-logo react" id="five"></div>
           <div className="skill-logo redux" id="four"></div>
+          <div className="skill-logo tailwind" id="three"></div>
           <div className="skill-logo bootstrap" id="three"></div>
           <div className="skill-logo nodejs" id="two"></div>
           <div className="skill-logo mongo" id="one"></div>

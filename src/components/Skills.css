@@ -107,6 +107,12 @@
 .fl {
   background-image: url("../assets/img/fl.png");
 }
+.typescript {
+  background-image: url("../assets/img/ts.png");
+}
+.tailwind {
+  background-image: url("../assets/img/tailwind.png");
+}
 
 /* Add more styles for other logos */
 
